@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0B0A12" />
+    <meta name="description" content="Política de privacidade do SpectraCast: sala no navegador, app para Windows e extensão para Chrome." />
+    <title>Política de privacidade · SpectraCast</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="brand/apple-touch-icon.png" />
+    <meta property="og:title" content="Política de privacidade · SpectraCast" />
+    <meta property="og:description" content="Política de privacidade do SpectraCast: sala no navegador, app para Windows e extensão para Chrome." />
+    <meta property="og:image" content="https://www.spectracast.com.br/brand/og-image-1200x630.png" />
+    <!-- Servidor de transmissão, para o aviso de limite de tráfego. Preenchido na publicação
+         a partir da variável SPECTRA_SERVER do repositório. -->
+    <meta name="spectra-server" content="https://api.spectracast.com.br" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap">
+        <a class="logo" href="./" aria-label="SpectraCast, início"><img src="brand/spectracast-logo-horizontal-dark-bg.svg" alt="SpectraCast" width="150" height="28" /></a>
+        <nav class="nav" id="nav" aria-label="Páginas do site">
+          <a href="./">Início</a>
+          <a href="app/">App para Windows</a>
+          <a href="extensao/">Extensão</a>
+          <a href="ajuda/">Ajuda</a>
+        </nav>
+        <a class="btn btn-primary" href="sala/" data-open-room>Abrir a sala</a>
+        <button class="menu-btn" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </header>
+    <div class="usage-notice" id="usage-notice" role="status" hidden></div>
+
+    <main>
+      <section class="page-head">
+        <div class="wrap">
+          <span class="kicker k-plain">Atualizada em 10 de novembro de 2026</span>
+          <h1>Política de privacidade</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="legal">
+            <p>
+              Esta política vale para o site www.spectracast.com.br, a sala no navegador (www.spectracast.com.br/sala/), o
+              app SpectraCast para Windows e a extensão “SpectraCast” para Chrome. O SpectraCast é um projeto pessoal e
+              gratuito, feito para grupos de amigos. Não tem anúncios próprios e não vende dados para ninguém.
+            </p>
+            <p>
+              <b>Responsável e contato:</b> Gustavo Toigo, mantenedor do SpectraCast. Para dúvidas, pedidos sobre os seus
+              dados ou para apagar a sua conta, escreva para <a class="contato" href="mailto:gustavo.toigo@gmail.com">gustavo.toigo@gmail.com</a>.
+            </p>
+
+            <h2>Que dados usamos e por quê</h2>
+            <div class="table-scroll">
+              <table>
+                <thead><tr><th>Dado</th><th>Para quê</th><th>Por quanto tempo</th></tr></thead>
+                <tbody>
+                  <tr><td><b>Conta:</b> nome de exibição, foto do perfil e o identificador da conta no Discord, no Google ou no e-mail</td><td>Mostrar quem você é na sala e manter o seu login</td><td>Até você pedir a exclusão da conta</td></tr>
+                  <tr><td><b>Endereço de e-mail</b>, quando você entra com e-mail ou com Google</td><td>Mandar o link de login e ligar os métodos de login à mesma conta</td><td>Até você pedir a exclusão da conta</td></tr>
+                  <tr><td><b>Salas:</b> nome da sala, quem participa, fila, música tocando</td><td>Sincronizar todos na sala</td><td>Enquanto a sala existir; o dono pode apagar a sala</td></tr>
+                  <tr><td><b>Mensagens do bate-papo</b></td><td>Mostrar a conversa da sala</td><td>Só as 200 mensagens mais recentes de cada sala, por no máximo 30 dias. A limpeza roda uma vez por dia</td></tr>
+                  <tr><td><b>Título e autor dos vídeos</b> que entram na fila, nas sugestões ou numa playlist (vindos do YouTube)</td><td>Mostrar o nome da música na fila e nas playlists</td><td>Renovados a cada 30 dias. Se o vídeo saiu do YouTube, a sugestão é apagada</td></tr>
+                  <tr><td><b>Playlists</b> e as músicas que você salvou</td><td>Guardar as suas playlists e as da sala</td><td>Até você apagar a playlist ou a conta</td></tr>
+                  <tr><td><b>Estatísticas</b> do dia (quantas pessoas usaram e quantas músicas foram enviadas)</td><td>Saber se o serviço está sendo usado e dentro dos limites gratuitos</td><td>Só números totais, sem dizer quem usou nem o que tocou</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Não pedimos acesso às suas mensagens, servidores ou contatos do Discord: o login pede só o seu nome e avatar.
+              Não guardamos senhas. A base legal é a execução do serviço que você pediu ao entrar (LGPD, art. 7º, V) e, para
+              as estatísticas, o legítimo interesse de manter o serviço funcionando (art. 7º, IX).
+            </p>
+
+            <h2>Transmissões de tela</h2>
+            <p>
+              A imagem e o som da transmissão vão do app de quem transmite para o servidor do SpectraCast e de lá para quem
+              está assistindo, ao vivo. <b>Nada é gravado.</b> O servidor só conta o volume total de tráfego do mês, para
+              respeitar o limite gratuito.
+            </p>
+
+            <h2 id="youtube">Serviços de API do YouTube</h2>
+            <p>
+              A música da sala toca no player oficial do YouTube, incorporado na página. Ao usar o SpectraCast, você também
+              está sujeito aos <a href="https://www.youtube.com/t/terms" rel="noopener">Termos de Serviço do YouTube</a>, e o
+              player segue a <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>.
+            </p>
+            <p>
+              Se você usar <b>“Importar da minha conta Google”</b>, o SpectraCast pede ao Google acesso só de leitura à sua conta
+              do YouTube, para listar as suas playlists e copiar as que você escolher. Esse acesso é usado só nesse momento e
+              não é guardado. Você pode revogar a permissão quando quiser em
+              <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. Os dados obtidos pela API do YouTube seguem também a <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>.
+            </p>
+
+            <h2>Serviços de terceiros</h2>
+            <ul>
+              <li><b>Firebase (Google, Estados Unidos):</b> banco de dados das salas, playlists, bate-papo e estatísticas, e envio do link de login por e-mail.</li>
+              <li><b>Cloudflare (Estados Unidos):</b> login com Discord, Google e e-mail e o cadastro das contas.</li>
+              <li><b>YouTube (Google):</b> o player dos vídeos.</li>
+              <li><b>API de dados do YouTube e oEmbed do YouTube (Google):</b> o nosso serviço no Cloudflare envia o link do vídeo ou da playlist para receber o título, o autor e a lista de vídeos. Não envia dados da sua conta.</li>
+              <li><b>Discord:</b> só quando você escolhe entrar com Discord.</li>
+              <li><b>Oracle Cloud:</b> o servidor das transmissões, no Brasil (São Paulo).</li>
+              <li><b>GitHub:</b> hospeda este site e o download do app.</li>
+            </ul>
+            <p>
+              O Firebase, o Cloudflare e o Google guardam dados nos Estados Unidos. Essa transferência internacional acontece
+              porque é necessária para o serviço que você pediu (LGPD, art. 33), e esses serviços oferecem garantias de proteção
+              compatíveis com a LGPD.
+            </p>
+            <p>
+              As fontes de letra do site e da sala vêm do próprio SpectraCast. Não usamos Google Fonts nem outro serviço de
+              fontes, e não usamos ferramentas de análise de visitas.
+            </p>
+
+            <h2 id="chat">Bate-papo da sala</h2>
+            <p>
+              As mensagens ficam no banco de dados da sala, junto com o seu nome e a sua foto, e só quem está na sala vê. Quem
+              mandou pode editar ou apagar a própria mensagem, e o dono da sala pode apagar qualquer mensagem. Cada sala guarda só
+              as 200 mensagens mais recentes, e nenhuma fica mais de 30 dias. Quando a sala é apagada, as mensagens vão junto. Não lemos as conversas, a não ser para atender uma denúncia enviada para
+              <a class="contato" href="mailto:gustavo.toigo@gmail.com">gustavo.toigo@gmail.com</a>.
+            </p>
+
+            <h2 id="extensao">Extensão para Chrome</h2>
+            <p>A extensão só funciona nas páginas do YouTube e da sala do SpectraCast. Ela:</p>
+            <ul>
+              <li><b>Lê o endereço e o título do vídeo ou da playlist aberta</b> na aba do YouTube, só quando você clica no botão, para mandar essa música para a sua sala ou para uma playlist sua.</li>
+              <li><b>Entrega esse link para a sala do SpectraCast</b> no seu próprio navegador ou para o app no seu computador. Quem salva a música é a sala, como se você tivesse colado o link lá.</li>
+              <li><b>Guarda no próprio navegador</b> a posição do botão na tela e o nome das suas playlists, para o menu abrir rápido. Esses dados não saem do seu computador.</li>
+              <li>Copia o link para a sua área de transferência quando você clica no botão.</li>
+            </ul>
+            <p>A extensão não lê o seu histórico, não acompanha o que você assiste, não coleta senhas e não tem rastreamento.</p>
+
+            <h2>O que fica no seu aparelho</h2>
+            <p>
+              O site e o app guardam no seu navegador ou computador o login, o volume, a última sala e preferências de tela.
+              Não usamos cookies de propaganda nem de rastreamento.
+            </p>
+
+            <h2>Seus direitos</h2>
+            <p>
+              Pela LGPD (art. 18), você pode pedir para ver, corrigir ou apagar os seus dados e para saber com quem eles são
+              compartilhados. Você já pode apagar as suas playlists e mensagens na própria sala, e remover a extensão em
+              <code>chrome://extensions</code>. Para apagar a conta inteira, escreva para <a class="contato" href="mailto:gustavo.toigo@gmail.com">gustavo.toigo@gmail.com</a>; respondemos em até 15 dias.
+            </p>
+
+            <h2>Mudanças nesta política</h2>
+            <p>Quando esta política mudar, a data no topo da página muda junto.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <a class="logo" href="./"><img src="brand/spectracast-logo-horizontal-dark-bg.svg" alt="SpectraCast" width="128" height="24" /></a>
+          <nav aria-label="Links do rodapé">
+            <a href="termos.html">Termos de Uso</a>
+            <a href="privacidade.html">Política de privacidade</a>
+            <a href="https://www.youtube.com/t/terms" rel="noopener">Termos de Serviço do YouTube</a>
+            <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>
+            <a href="ajuda/">Ajuda</a>
+          </nav>
+        </div>
+        <span>SpectraCast é um projeto gratuito para grupos de amigos. Não é afiliado ao YouTube, ao Google nem ao Discord.</span>
+      </div>
+    </footer>
+    <script src="site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0B0A12" />
+    <meta name="description" content="Transmita a tela do computador com o som do sistema e assista aos vídeos do YouTube com os amigos, sincronizados no mesmo segundo." />
+    <title>SpectraCast: transmissão de tela e música juntos</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="brand/apple-touch-icon.png" />
+    <meta property="og:title" content="SpectraCast: transmissão de tela e música juntos" />
+    <meta property="og:description" content="Transmita a tela do computador com o som do sistema e assista aos vídeos do YouTube com os amigos, sincronizados no mesmo segundo." />
+    <meta property="og:image" content="https://www.spectracast.com.br/brand/og-image-1200x630.png" />
+    <!-- Servidor de transmissão, para o aviso de limite de tráfego. Preenchido na publicação
+         a partir da variável SPECTRA_SERVER do repositório. -->
+    <meta name="spectra-server" content="https://api.spectracast.com.br" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap">
+        <a class="logo" href="./" aria-label="SpectraCast, início"><img src="brand/spectracast-logo-horizontal-dark-bg.svg" alt="SpectraCast" width="150" height="28" /></a>
+        <nav class="nav" id="nav" aria-label="Páginas do site">
+          <a href="./" aria-current="page">Início</a>
+          <a href="app/">App para Windows</a>
+          <a href="extensao/">Extensão</a>
+          <a href="ajuda/">Ajuda</a>
+        </nav>
+        <a class="btn btn-primary" href="sala/" data-open-room>Abrir a sala</a>
+        <button class="menu-btn" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </header>
+    <div class="usage-notice" id="usage-notice" role="status" hidden></div>
+
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <span class="eyebrow">Para a sua call do Discord</span>
+          <h1>Sua tela e a mesma música,<br /><span class="grad">para a galera, ao mesmo tempo.</span></h1>
+          <p class="lead">
+            Transmita a tela do computador com o som do sistema e assistam juntos aos vídeos do YouTube, sincronizados no
+            mesmo segundo. Tudo numa sala só.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary btn-lg" href="sala/">Abrir a sala no navegador</a>
+            <a class="btn btn-secondary btn-lg" href="app/"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5.5 10.5 4.4v7.1H3V5.5Zm0 13 7.5 1.1v-7.1H3v6ZM11.5 4.3 21 3v8.5h-9.5V4.3Zm0 15.4L21 21v-8.5h-9.5v7.2Z"/></svg><span>Baixar para Windows</span></a>
+          </div>
+          <span class="small">Grátis · entre com Discord, Google, e-mail ou como convidado</span>
+          <div class="shot hero-shot">
+            <img src="img/sala.png" width="1600" height="933" alt="Sala do SpectraCast no app: fila de músicas à esquerda, vídeo do YouTube e transmissão lado a lado no meio, convidados e bate-papo à direita." />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="funcoes">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker k-plain">Duas funções, uma sala</span>
+            <h2>Mostre a sua tela. Ouçam a mesma coisa.</h2>
+          </div>
+          <div class="flows">
+            <article class="flow stream">
+              <h3><img src="brand/transmissao.svg" alt="" width="36" height="36" />Transmissão de tela</h3>
+              <p>Mostre um jogo, um programa ou uma janela, com o som do computador. Você envia uma vez e cada amigo escolhe a qualidade que recebe.</p>
+              <ul class="checks">
+                <li>Até 1440p a 60 fps</li>
+                <li>Mais de uma pessoa transmitindo na mesma sala</li>
+                <li>Volume separado para cada transmissão</li>
+                <li>Sem microfone: a conversa continua no Discord</li>
+              </ul>
+              <p class="note">Para transmitir, use o app para Windows. Para assistir, basta o navegador.</p>
+            </article>
+            <article class="flow music">
+              <h3><img src="brand/musica.svg" alt="" width="36" height="36" />Música sincronizada</h3>
+              <p>Cada pessoa assiste ao vídeo no player oficial do YouTube, e o SpectraCast mantém todos no mesmo segundo: play, pausa e pulos valem para a sala inteira.</p>
+              <ul class="checks">
+                <li>Fila do grupo: tirar músicas e reordenar arrastando</li>
+                <li>Playlists suas e da sala, com uma cor por pessoa</li>
+                <li>Botão 👍 que abre o vídeo no YouTube para você curtir lá</li>
+                <li>Quem entra no meio começa do ponto certo</li>
+              </ul>
+              <p class="note">Funciona no navegador e no app.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="como-funciona">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker k-plain">Como funciona</span>
+            <h2>Da call para a sala em três passos.</h2>
+          </div>
+          <ol class="steps">
+            <li><strong>Entre</strong><span>Com Discord, Google ou e-mail. Quem só recebeu o link pode entrar como convidado.</span></li>
+            <li><strong>Crie a sala</strong><span>Escolha um nome e uma senha. A sala ganha um código e um link para mandar no Discord.</span></li>
+            <li><strong>Ponha música ou transmita</strong><span>Cole um link do YouTube na fila, ou aperte Transmitir no app.</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="recursos">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker k-plain">Tudo o que a sala tem</span>
+            <h2>Feita para usar junto, a noite inteira.</h2>
+          </div>
+          <div class="legend"><span><i class="dot-stream"></i>Transmissão</span><span><i class="dot-music"></i>Música</span><span><i class="dot-both"></i>Os dois</span></div>
+          <div class="features">
+            <div class="feature"><b><i class="dot-both"></i>Bate-papo da sala</b><span>Mensagens em balões, emojis e links. Edite ou apague o que você mandou.</span></div>
+            <div class="feature"><b><i class="dot-both"></i>Tela dividida</b><span>Vídeo e transmissão lado a lado, com a divisória no tamanho que você quiser.</span></div>
+            <div class="feature"><b><i class="dot-both"></i>Volumes separados</b><span>Um controle para a música e outro para cada transmissão.</span></div>
+            <div class="feature"><b><i class="dot-music"></i>Mini player</b><span>Quando alguém transmite, o vídeo pode ir para o canto, sempre visível.</span></div>
+            <div class="feature"><b><i class="dot-stream"></i>Prévia ao vivo</b><span>Cada transmissão aparece com miniatura ao lado de quem está na sala.</span></div>
+            <div class="feature"><b><i class="dot-both"></i>Convites e senha</b><span>Convide direto quem já tem conta. Cada sala tem a sua senha.</span></div>
+            <div class="feature"><b><i class="dot-music"></i>Controle do dono</b><span>O dono escolhe quem pode mexer na fila e pode remover pessoas e mensagens.</span></div>
+            <div class="feature"><b><i class="dot-music"></i>Sugestões do grupo</b><span>O que a galera já ouviu vira sugestão com um clique.</span></div>
+            <div class="feature"><b><i class="dot-stream"></i>Sons de aviso</b><span>Um som curto quando uma transmissão começa ou termina.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="baixar">
+        <div class="wrap">
+          <div class="cards-2">
+            <article class="card">
+              <span class="kicker k-stream">App para Windows</span>
+              <h3>O app instala sozinho e se atualiza com um clique.</h3>
+              <p>É o único jeito de transmitir a tela, e reúne música, transmissões e bate-papo numa janela própria.</p>
+              <a class="btn btn-secondary" href="app/">Conhecer o app</a>
+            </article>
+            <article class="card">
+              <span class="kicker k-music">Extensão para Chrome</span>
+              <h3>Do YouTube para a sala com um clique.</h3>
+              <p>Um botão nos vídeos do YouTube manda a música para a sala, no site ou no app, ou salva numa playlist sua.</p>
+              <a class="btn btn-secondary" href="extensao/">Conhecer a extensão</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final">
+        <div class="wrap">
+          <h2>Chame a galera.</h2>
+          <p class="lead">Criar uma sala leva menos de um minuto.</p>
+          <a class="btn btn-primary btn-lg" href="sala/">Abrir a sala</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <a class="logo" href="./"><img src="brand/spectracast-logo-horizontal-dark-bg.svg" alt="SpectraCast" width="128" height="24" /></a>
+          <nav aria-label="Links do rodapé">
+            <a href="termos.html">Termos de Uso</a>
+            <a href="privacidade.html">Política de privacidade</a>
+            <a href="https://www.youtube.com/t/terms" rel="noopener">Termos de Serviço do YouTube</a>
+            <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>
+            <a href="ajuda/">Ajuda</a>
+          </nav>
+        </div>
+        <span>SpectraCast é um projeto gratuito para grupos de amigos. Não é afiliado ao YouTube, ao Google nem ao Discord.</span>
+      </div>
+    </footer>
+    <script src="site.js"></script>
+  </body>
+</html>

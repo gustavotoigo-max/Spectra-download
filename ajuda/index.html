@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0B0A12" />
+    <meta name="description" content="Perguntas frequentes sobre o SpectraCast: transmissão, música, app para Windows, conta e limite de tráfego." />
+    <title>Ajuda · SpectraCast</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="icon" href="../favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="../brand/apple-touch-icon.png" />
+    <meta property="og:title" content="Ajuda · SpectraCast" />
+    <meta property="og:description" content="Perguntas frequentes sobre o SpectraCast: transmissão, música, app para Windows, conta e limite de tráfego." />
+    <meta property="og:image" content="https://www.spectracast.com.br/brand/og-image-1200x630.png" />
+    <!-- Servidor de transmissão, para o aviso de limite de tráfego. Preenchido na publicação
+         a partir da variável SPECTRA_SERVER do repositório. -->
+    <meta name="spectra-server" content="https://api.spectracast.com.br" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap">
+        <a class="logo" href=".././" aria-label="SpectraCast, início"><img src="../brand/spectracast-logo-horizontal-dark-bg.svg" alt="SpectraCast" width="150" height="28" /></a>
+        <nav class="nav" id="nav" aria-label="Páginas do site">
+          <a href=".././">Início</a>
+          <a href="../app/">App para Windows</a>
+          <a href="../extensao/">Extensão</a>
+          <a href="../ajuda/" aria-current="page">Ajuda</a>
+        </nav>
+        <a class="btn btn-primary" href="../sala/" data-open-room>Abrir a sala</a>
+        <button class="menu-btn" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </header>
+    <div class="usage-notice" id="usage-notice" role="status" hidden></div>
+
+    <main>
+      <section class="page-head">
+        <div class="wrap">
+          <span class="kicker k-plain">Ajuda</span>
+          <h1>Perguntas frequentes</h1>
+          <p class="lead">Não achou a resposta? Escreva para <a class="contato" href="mailto:gustavo.toigo@gmail.com">gustavo.toigo@gmail.com</a>.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="faq-group">
+            <h2>Transmissão</h2>
+            <div class="faq">
+            <details>
+              <summary>Preciso do app para assistir a uma transmissão?</summary>
+              <div><p>Não. Para assistir, basta abrir a sala no navegador. O app para Windows só é necessário para <b>transmitir</b> a sua tela.</p></div>
+            </details>
+            <details>
+              <summary>Por que o meu microfone não vai junto?</summary>
+              <div><p>De propósito: o SpectraCast envia só a imagem e o som do computador. A conversa continua no Discord, sem eco.</p></div>
+            </details>
+            <details>
+              <summary>A transmissão de um filme ou série aparece preta</summary>
+              <div><p>Serviços como Netflix protegem o vídeo contra captura, e o SpectraCast não contorna essa proteção. Lembre também que transmitir filmes, séries ou eventos pagos sem autorização é proibido pelos <a href="../termos.html">Termos de Uso</a>.</p></div>
+            </details>
+            <details>
+              <summary>A imagem está travando ou com pouca qualidade</summary>
+              <div><p>Quem assiste pode baixar a qualidade no próprio player. Quem transmite pode tentar 30 fps ou uma resolução menor; o app mostra quando o processador ou a internet está limitando.</p></div>
+            </details>
+            <details>
+              <summary>Por que as transmissões pararam no fim do mês?</summary>
+              <div><p>O servidor de transmissão é gratuito e tem um limite de tráfego por mês. Ao chegar nele, as transmissões param até o dia 1º do mês seguinte, e um aviso aparece no topo do site e no app. A música continua funcionando normalmente.</p></div>
+            </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="faq-group">
+            <h2>Música</h2>
+            <div class="faq">
+            <details>
+              <summary>A música está fora de sincronia</summary>
+              <div><p>O SpectraCast corrige pequenos atrasos sozinho. Se alguém ficar muito para trás, peça para recarregar a página da sala. Anúncios do YouTube podem atrasar uma pessoa por alguns segundos: depois do anúncio ela volta ao ponto da sala.</p></div>
+            </details>
+            <details>
+              <summary>Por que aparecem anúncios?</summary>
+              <div><p>Cada pessoa assiste no player oficial do YouTube, que mostra os anúncios normalmente. Quem tem YouTube Premium e está logado no YouTube no navegador não vê anúncios.</p></div>
+            </details>
+            <details>
+              <summary>Quem pode mexer na fila?</summary>
+              <div><p>Por padrão, todos na sala podem adicionar músicas. O dono escolhe nas configurações da sala quem pode tirar e reordenar.</p></div>
+            </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="faq-group">
+            <h2>App e conta</h2>
+            <div class="faq">
+            <details>
+              <summary>O Windows diz que protegeu o computador</summary>
+              <div><p>O app ainda não tem assinatura digital. Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>. Isso só aparece na primeira vez.</p></div>
+            </details>
+            <details>
+              <summary>Como atualizo o app?</summary>
+              <div><p>Quando sai uma versão nova, aparece uma faixa no topo do app com o botão <b>Atualizar</b>. Um clique baixa, instala e reabre.</p></div>
+            </details>
+            <details>
+              <summary>Posso usar sem criar conta?</summary>
+              <div><p>Sim, como convidado, numa sala da qual você tem o link e a senha. Para criar salas e guardar playlists, entre com Discord, Google ou e-mail.</p></div>
+            </details>
+            <details>
+              <summary>Como apago a minha conta?</summary>
+              <div><p>Escreva para <a class="contato" href="mailto:gustavo.toigo@gmail.com">gustavo.toigo@gmail.com</a> pedindo a exclusão. Apagamos a conta, as suas playlists e as salas que são suas. Veja a <a href="../privacidade.html">política de privacidade</a>.</p></div>
+            </details>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <a class="logo" href=".././"><img src="../brand/spectracast-logo-horizontal-dark-bg.svg" alt="SpectraCast" width="128" height="24" /></a>
+          <nav aria-label="Links do rodapé">
+            <a href="../termos.html">Termos de Uso</a>
+            <a href="../privacidade.html">Política de privacidade</a>
+            <a href="https://www.youtube.com/t/terms" rel="noopener">Termos de Serviço do YouTube</a>
+            <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>
+            <a href="../ajuda/">Ajuda</a>
+          </nav>
+        </div>
+        <span>SpectraCast é um projeto gratuito para grupos de amigos. Não é afiliado ao YouTube, ao Google nem ao Discord.</span>
+      </div>
+    </footer>
+    <script src="../site.js"></script>
+  </body>
+</html>
